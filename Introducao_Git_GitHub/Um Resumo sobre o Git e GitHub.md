@@ -1,12 +1,10 @@
 **Um Resumo sobre o Git e GitHub**
 
-**https://www.markdownguide.org/basic-syntax/**
-
-
-
  **#GitHub#Git**
 
-O que é Git? Criado em 2005 por Linus Torvalds (Criador do Linux), o git é um sistema de versionamento de código distribuído que facilita o desenvolvimento de software colaborativo.
+O que é Git? 
+
+Criado em 2005 por Linus Torvalds (Criador do Linux), o git é um sistema de versionamento de código distribuído que facilita o desenvolvimento de software colaborativo.
 
  
 
@@ -58,9 +56,9 @@ Quais são os objetos internos do Git?
 
  
 
-Ø Uma árvore pode conter outra árvore ou blobs. As árvores apontam para as blobs e tem um SHA1 dos metadados das árvores.
+- Uma árvore pode conter outra árvore ou blobs. As árvores apontam para as blobs e tem um SHA1 dos metadados das árvores.
 
-Ø Se mudar um caracter num arquivo, muda a encriptação da bolha, e consequentemente das árvores.
+- Se mudar um caracter num arquivo, muda a encriptação da bolha, e consequentemente das árvores.
 
  
 
@@ -68,7 +66,7 @@ Quais são os objetos internos do Git?
 
  
 
-Ø Usa os parentes para criar uma linha do tempo e demonstrar que não houve adulteração nos commits.
+- Usa os parentes para criar uma linha do tempo e demonstrar que não houve adulteração nos commits.
 
  
 
@@ -116,7 +114,23 @@ git config --global --unset user.nickname (Remove o usuário em Git)
 
 git config --global --unset user.email (Remove o e-mail do usuário)
 
- 
+ Mais comandos Git:
+
+Git clone -  é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo).
+
+Git branch - com as *branches* (ou ramificações), vários desenvolvedores podem trabalhar paralelamente no mesmo projeto. 
+
+Git status - serve para fornecer algumas informações importantes sobre a *branch* em que você estiver no momento, incluindo se ela está atualizada em relação à master e quais arquivos foram alterados.
+
+Git diff - Apesar de o git status fornecer muitas informações relevantes, às vezes é preciso ir além. Caso você queira, por exemplo, saber exatamente o que você alterou (e não apenas quais arquivos foram alterados).
+
+Git add - Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo *commit*. Para incluir as alterações de um arquivo em nosso próximo *commit*, será preciso usar o comando **git add**.
+
+Para adicionar, de uma vez, todos os arquivos modificados:
+
+```
+git add -A
+```
 
 Requisição de sincronização remota de repositório:
 
@@ -132,12 +146,16 @@ Requisição de sincronização remota de repositório:
 
  
 
-Disponível também em: https://www.linkedin.com/pulse/git-e-github-gustavo-sena/
-
  Referências:
 
 Download -> https://github.com/git-guides/install-git
 
- GIT. Git Basics - Recording Changes to the Repository. Disponível em: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository. Acesso em: 06 jul. 2022.
+**https://www.markdownguide.org/basic-syntax/**
 
-DATACAMP. How does Git store information? Disponível em: https://campus.datacamp.com/courses/introduction-to-git/repositories?ex=1. Acesso em: 05 jul. 2022. 
+ https://www.linkedin.com/pulse/git-e-github-gustavo-sena/
+
+https://blog.geekhunter.com.br/comandos-git-mais-utilizados/
+
+ GIT. Git Basics - Recording Changes to the Repository. Disponível em: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository. Acesso em: 04 out. 2022.
+
+DATACAMP. How does Git store information? Disponível em: https://campus.datacamp.com/courses/introduction-to-git/repositories?ex=1. Acesso em: 04 out. 2022. 
